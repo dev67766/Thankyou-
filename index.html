@@ -61,6 +61,30 @@
       color: #ddd;
     }
   </style>
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '764629639767293'); 
+    fbq('track', 'PageView');
+
+    // ✅ Track Purchase Event
+    fbq('track', 'Purchase', {
+      value: 499.00,
+      currency: 'INR'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" 
+    src="https://unreal-engine-course-uof3.vercel.app/"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -72,7 +96,7 @@
   <a href="https://wa.me/919053775760?text=Hi%20I%20just%20enrolled%20in%20the%20course%20and%20need%20support" 
      class="btn whatsapp-btn" target="_blank">📩 Contact on WhatsApp</a>
 
-  <a href="index.html" class="btn">⬅️ Back to Homepage</a>
+  <a href="https://unreal-engine-course-uof3.vercel.app/" class="btn">⬅️ Back to Homepage</a>
 
   <footer>
     © 2025 First Front Game Studios. All Rights Reserved.
